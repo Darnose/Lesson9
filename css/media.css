@@ -1,0 +1,245 @@
+/* ------ Media Queries ------ */
+
+/* 991-1200px */
+@media screen and (max-width: 1200px) {
+    .menu__item {
+       font-size: 15px;
+   }
+   .menu__item:not(:last-child) {
+       margin-right: 17px;
+   }
+   .menu__btn {
+        margin-left: 0;
+   }
+    .wrap {
+       width: 310px;
+   }
+    .wrap__text {
+       width: 75%;
+   }
+   .list {
+       width: 290px;
+   }
+   .news__text {
+       width: 155px;
+   }
+   .escort {
+       width: 350px;
+   }
+   .convoy {
+        padding: 40px 0 35px;
+   }
+   .categories {
+        padding: 12px 0 12px 25px;
+   }
+}
+
+/* 767-991px */
+@media screen and (max-width: 991px) {
+    .confidence h2 {
+        margin-bottom: 0;
+    }
+    .wrap {
+        margin-top: 40px;
+        width: 100%;
+    }
+     .wrap__text {
+        width: 100%;
+    }
+    .list {
+        width: 100%;    
+    }
+    .points {
+        padding: 40px 0 74px;
+    }
+    .list {
+        margin-top: 44px;
+    }
+    .footer__btn {
+        display: none;
+    }
+    .logo img {
+        height: 100%;
+        width: 100%;
+    }
+    .footer {
+        padding: 43px 0 61px;
+    }
+    .coaching {
+        margin-top: 0px;
+    }
+    .clickbait {
+        margin-top: 0;
+    }
+    .case {
+        margin-top: 46px;
+    }
+    .categories {
+        display: none;
+    }
+    .escort {
+        width: 100%;
+    }
+    .convoy {
+        padding: 53px 0 47px;
+    }
+    .consultation {
+        width: 100%;
+    }  
+    .point__title {
+        justify-content: center;
+    }
+    .point__text {
+        justify-content: center;
+    } 
+    .more {
+        margin-bottom: 43px;
+    }
+    .mission::after {
+        display: none;
+    }
+    .map {
+        padding-top: 0;
+        padding-bottom: 25px;
+    }
+    .map-img {
+        position: static;
+        height: 443px;
+    }
+    .contact-us {
+        margin-top: 22px;
+        position: static;
+    }
+    .contact-us::after {
+        display: none;
+    }
+}
+
+/* 575-767px */
+@media screen and (max-width: 767px) {
+    .benefits__text {
+        margin-bottom: 20px;
+    }
+    .block {
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    h1 {
+        font-size: 45px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    .case {
+        text-align: center;
+        margin: 0;
+    }
+    .coaching {
+        margin-top: 39px;
+    }
+    .circle {
+        margin: 43px auto 0 0;
+    }
+    .pictures {
+        padding: 53px 0 17px;
+    }
+    .picture__icon {
+        margin-bottom: 23px;
+    }
+    .convoy img {
+        width: 100%;
+        height: 100%;
+    }
+    .data {
+        width: 200px;
+    }
+    .map-img {
+        background: url(../img/map-tablet.jpg) no-repeat center top;
+    }
+}
+
+/* 320-575px */
+@media screen and (max-width: 575px) {
+    body {
+        font-size: 12px;
+    }
+    h1 {
+       font-size: 30px;
+   }
+    h2 {
+       font-size: 22px;
+   }
+    h3 {
+	font-size: 19px;
+    }
+    h4 {
+	font-size: 16px;
+    }
+    .benefits__text {
+        font-size: 12px;
+    }
+    .case {
+        padding: 12px 7px;
+    }
+    .city h2 {
+        width: 100%;
+    }
+    .info {
+        font-size: 12px;
+    }
+    .escort__text {
+        font-size: 12px;
+    }
+    .subcategory__text {
+        font-size: 12px;
+    }
+    .services {
+        text-align: center;
+    }
+    .services__text {
+        font-size: 14px;
+    }
+    .clickbait {
+        margin-top: 21px;
+        text-align: center;
+    }
+    .address {
+        margin-top: 21px;
+        text-align: center;
+    }
+    .coaching {
+        margin-top: 21px;
+        justify-content: center;
+    }
+    .protect {
+        text-align: center;
+    }
+    .footer__btn {
+        display: inline-block;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .fa-expand {
+        opacity: 1;
+    }
+    .fa-up-right-and-down-left-from-center {
+        opacity: 0;
+    }
+    .map {
+        padding-bottom: 19px;
+    }
+    .contact-us {
+        margin-top: 18px;
+    }
+    .general {
+        flex-direction: column;
+    }
+    .data {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
