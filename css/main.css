@@ -1,10 +1,12 @@
 /* ------ Specification ------ */
 body {
-	font-family: 'MuseoSansCyrl 300', sans-serif;
+	font-family: 'MuseoSansCyrl', sans-serif;
 	padding: 0;
 	margin: 0;
 	line-height: 1.25em;
 	font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
 }
 
 p {
@@ -24,7 +26,7 @@ a, a:hover {
 }
 
 h1 {
-    font-family: 'MuseoSansCyrl 700', sans-serif;
+    font-weight: 700;
     font-size: 58px;
     line-height: 1.5em;
 }
@@ -38,8 +40,8 @@ h3 {
 }
 
 h4 {
-    font-family: 'MuseoSansCyrl 700', sans-serif;
-	font-size: 19px;
+    font-weight: 700;
+    font-size: 19px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -57,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn {
-    font-family: 'MuseoSansCyrl 700', sans-serif;
+    font-weight: 700;
     background: #1cb883;
     color: #fff;
     border-radius: 2px;
@@ -106,18 +108,18 @@ h1, h2, h3, h4, h5, h6 {
     padding: 17px 0 7px;
     background: rgba(229, 230, 232, 0.47);
     border-top: 5px solid #58647a ;  
-    border-bottom: 4px solid #f1f1f3;
+    border-bottom: 4px solid rgba(197, 201, 222, 0.55);;
 }
 
 .navigation-normal {
-    padding: 17px 0 7px;
+    padding: 15px 0 7px;
     background: rgba(229, 230, 232, 1);
     border-top: 5px solid #58647a ;  
     border-bottom: 4px solid #f1f1f3;
 }
 
 .menu {
-    font-family: 'MuseoSansCyrl 700', sans-serif;
+    font-weight: 700;
     display: flex;
     align-items: center;
     margin-top: 29px;
@@ -142,17 +144,42 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     height: 100%;
     width: 100%;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    
+}
+
+.fa-phone-flip {
+    display: block;
 }
 
 .menu__btn {
-    padding: 7px 18px;
+    display: flex;
+    flex-direction: row;
+    margin-top: -3px;
+    padding: 10px 18px;
+}
+
+.burger {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.burger__btn {
+    font-size: 26px;
+    border: none;
+    background: transparent;
 }
 
 .city {
-    padding: 80px 0 155px;
+    padding: 82px 0 132px;
     border-bottom: 16px solid rgba(255, 255, 255, 0.15);
 }
 
@@ -161,10 +188,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .city h2 {
-    font-family: 'MuseoSansCyrl 100', sans-serif;
-    margin-top: 7px;
+    font-weight: 100;
+    margin-top: 5px;
     width: 500px;
-    margin-bottom: 25px;
+    margin-bottom: 27px;
 }
 
 .brands {
@@ -172,7 +199,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     align-items: center;
     width: 166px;
-    height: 46px;
+    height: 52px;
     background: rgba(255, 255, 255, 0.82);
     border: 3px solid rgba(255, 255, 255, 0.66);
     border-radius: 3px;
@@ -199,11 +226,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .brands__box_tele {
-    color: #43c9fd;
+    color: #25a3d4;
 }
 
 .brands__box_twit{
-    color: #25a3d4;
+    color: #43c9fd;
 }
 
 .brands__box_face:hover {
@@ -225,7 +252,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .point {
-    padding: 70px 0 66px;
+    padding: 58px 0 68px;
     background: #fafafb;
 }
 
@@ -236,14 +263,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .point__text {
+    margin-top: 5px;
     display: flex;
     flex-direction: row;
     color: #7e838d;
 }
 
 .fa-right-long {
-    margin-left: 3px;
-    margin-right: 3px;
+    font-size: 11px;
+    margin-top: 3px;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 .point__text a {
@@ -259,10 +289,16 @@ h1, h2, h3, h4, h5, h6 {
 .block {
     display: flex;
     justify-content: center;
+    margin: 23px 0 0;
+}
+
+.block-service {
+    display: flex;
+    justify-content: center;
+    margin: 17px 0 0;
 }
 
 .case {
-    margin: 15px 0;
     padding: 12px 13px 12px 17px;
     transition: all 0.5s ease;
     border: 2px solid transparent;
@@ -276,7 +312,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .case__text_15 {
-    font-family: 'MuseoSansCyrl 700', sans-serif;
+    font-weight: 700;
     font-size: 15.83px;
 }
 
@@ -292,7 +328,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .confidence h2 {
-    font-family: 'MuseoSansCyrl 700', sans-serif;
+    font-weight: 700;
     font-size: 29.17px;
     text-align: center;
     margin-bottom: 40px;
@@ -305,6 +341,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     text-align: center;
     width: 370px;
+    max-width: 100%;
 }
 
 .wrap_icon {
@@ -320,7 +357,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wrap__title {
-    font-family: 'MuseoSansCyrl 700', sans-serif;
+    font-size: 21px;
+    font-weight: 700;
     margin-bottom: 8px;
 }
 
@@ -349,6 +387,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 50%;
     background-clip: padding-box;
     position: relative;
+    margin-top: 10px;
 }
 
 .escort {
@@ -358,15 +397,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .escort__title {
-    font-family: 'MuseoSansCyrl 700', sans-serif;
+    font-weight: 700;
     color: #fff;
     font-size: 25px;
     margin-bottom: 20px;
-    line-height: 1.1em;
+    line-height: 1.0em;
+}
+
+.escort__text {
+    line-height: 1.2em;
 }
 
 .categories {
-    padding: 20px 55px 20px 28px;
+    padding: 20px 55px 23px 28px;
     border: 2px solid #9a9ca6;
     border-radius: 5px;
     font-size: 15.42px;
@@ -382,22 +425,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .category:not(:last-child) {
-    margin-bottom: 17px;
+    margin-bottom: 15px;
 }
 
 .benefits {
-    padding-top: 55px;
+    padding-top: 51px;
 }
 
 .benefits__title {
-    font-family: 'MuseoSansCyrl 700', sans-serif;
+    font-weight: 700;
     font-size: 29.17px;
-    margin-bottom: 26px;
+    margin-bottom: 30px;
 }
 
 .benefits__text {
+    line-height: 1.2em;
     font-size: 15px;
-    margin-bottom: 51px;
+    margin-bottom: 52px;
 }
 
 .circle {
@@ -442,7 +486,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .map-img {
-    background: url(../img/Карта.jpg) no-repeat center top;
+    background: url(../img/map.jpg) no-repeat center top;
     position: absolute;
     top: 0;
     left: 0;
@@ -457,13 +501,14 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 16px;
     border-radius: 7px;
     position: relative;
+    width: 470px;
 }
 
 .contact-us::after {
     content: '';
-    border: 20px solid transparent;
-    border-left: 20px solid rgba(88, 100, 122, 0.75); ; 
-    border-bottom: 20px solid rgba(88, 100, 122, 0.75); ;
+    border: 18px solid transparent;
+    border-left: 18px solid rgba(88, 100, 122, 0.75); ; 
+    border-bottom: 18px solid rgba(88, 100, 122, 0.75); ;
     border-radius: 3px;
     position: absolute;
     top: 11%;
@@ -488,6 +533,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about__title {
+    margin-top: 3px;
     font-size: 21px;
     color: #fff;
 }
@@ -524,7 +570,7 @@ h1, h2, h3, h4, h5, h6 {
 .general {
     display: flex;
     justify-content: space-between;
-    margin-top: 46px;
+    margin-top: 42px;
 }
 
 .contacts {
@@ -535,8 +581,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact__adress {
     display: flex;
-    margin-top: 24px;
-    margin-bottom: 22px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    line-height: 1.2em;
 }
 
 .fa-location-arrow {
@@ -554,12 +601,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .contacts__link {
    margin-left: 7px;
-   
 }
 
 .data {
-    width: 180px;
+    margin-top: 3px;
+    width: 190px;
     font-size: 12px;
+    line-height: 1.15em;
 }
 
 .data__text:not(:last-child) {
@@ -569,13 +617,13 @@ h1, h2, h3, h4, h5, h6 {
 /* ------ Third section ------ */
 
 .points {
-    padding: 103px 0 78px;
+    padding: 104px 0 78px;
     position: relative;
 }
 
 .points__btn {
     font-size: 16px;
-    padding: 10px 38px;
+    padding: 13px 38px;
     position: absolute;
     top: 0%;
     left:50%;
@@ -593,7 +641,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    margin-bottom: 8px;
+    margin-bottom: 11px;
 }
 
 .list {
@@ -606,35 +654,38 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .list__title {
-    font-family: 'MuseoSansCyrl 100', sans-serif;
+    font-weight: 100;
     margin-bottom: 15px;
     line-height: 0.9em;
 }
 
-.addition {
-    background: #fafafb;
-    padding: 51px 0 81px ;
+.list__text {
+    line-height: 1.2em;
 }
 
 .subcategory {
-    padding: 55px 0 90px;
+    padding: 55px 0;
 }
 
 .subcategory__title {
-    font-family: 'MuseoSansCyrl 700', sans-serif;
-    margin-bottom: 22px;
+    font-weight: 700;
+    margin-bottom: 25px;
 }
 
 .subcategory__text {
+    max-width: 770px;
+    width: 100%;
+    line-height: 1.2em;
     font-size: 15px;
 }
 
 .subcategory__text:not(:last-child) {
-    margin-bottom: 19px;
+    margin-bottom: 18px;
 }
 
 .consultation {
-    width: 470px;
+    max-width: 470px;
+    width: 100%;
     height: 190px;
     margin-top: 36px;
     padding: 24px 32px 28px ;
@@ -644,16 +695,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .consultation__title {
+    font-size: 16px;
     margin-bottom: 18px;
 }
 
 .consultation a {
-    font-family: 'MuseoSansCyrl 700', sans-serif;
+    font-weight: 700;
 }
 
 .consultation__text {
     width: 250px;
     font-size: 12px;
+    line-height: 1.2em;
 }
 
 .consultation img {
@@ -663,13 +716,19 @@ h1, h2, h3, h4, h5, h6 {
     left: 73%;
 }
 
+.send {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
 .consultation__btn {
-    margin-bottom: 12px;
     background: #fff;
     color: #b81c31;
     border: 2px solid #b81c31;
     margin-right: 13px;
-    padding: 12px 18px 10px 16px;
+    padding: 12px 25px 10px;
 }
 
 .consultation__btn:hover {
@@ -678,10 +737,10 @@ h1, h2, h3, h4, h5, h6 {
     background: #b81c31;
 }
 
-.navigate {
-    position: relative;
-    padding: 16px 53px 11px;
-    border-bottom: 1px solid #dfdfe8;
+.addition {
+    background: #fafafb;
+    padding: 51px 0 110px ;
+    height: 100%;
 }
 
 .addition__title {
@@ -694,8 +753,14 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: 1px solid #dfdfe8;
 }
 
+.navigate {
+    position: relative;
+    padding: 14px 53px 11px;
+    border-bottom: 1px solid #dfdfe8;
+}
+
 .navigate__text {
-    font-family: 'MuseoSansCyrl 700', sans-serif;
+    font-weight: 700;
     color: #747487;
     font-size: 15.42px;
     transition: all 0.5s ease;
@@ -723,13 +788,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .reviews {
-    margin-top: 55px;
+    margin-top: 53px;
+    color: #969ca9;
 }
 
 .reviews__title {
     font-size: 17.92px;
     color: #969ca9;
-    margin-bottom: 38px;
+    margin-bottom: 36px;
     margin-left: 25px;
 }
 
@@ -745,6 +811,8 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 16%;
     border: 5px solid #656e8d;
     border-radius: 50%;
+    max-width: 140px;
+    max-height: 140px;
 }
 
 .comment {
@@ -757,20 +825,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .comment__title {
     color: #747487;
+    font-size: 15.42px;
     margin-top: 18px;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
 }
 
 .comment__text {
     font-size: 13px;
     width: 270px;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
+    line-height: 1.2em;
 }
 
 .switch {
     display: flex;
     justify-content: space-between;
-    margin-top: 27px;
+    margin-top: 25px;
     width: 68px;
 }
 
@@ -783,7 +853,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .pictures {
-    padding: 49px 0 71px;
+    padding: 48px 0 71px;
 }
 
 .picture__icon {
@@ -831,14 +901,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .pictures__title {
-    font-family: 'MuseoSansCyrl 700', sans-serif;
-    margin-bottom: 43px;
+    font-weight: 700;
+    margin-bottom: 38px;
 }
 
 /* ------ Fourth section ------ */
 
 .mission {
-    padding: 38px 0 42px;
+    padding: 39px 0 44px;
     background: #58647a;
     position: relative;
     opacity: 1;
@@ -858,7 +928,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mission__title {
-    font-family: 'MuseoSansCyrl 700', sans-serif;
+    font-weight: 700;
     font-size: 23px;
     color: #aaafb9;
     padding-bottom: 10px;
@@ -872,27 +942,28 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 15px;
     line-height: 1.2em;
     color: #d1d4d9;
-    margin-bottom: 36px;
+    
 }
 
 .info1 {
-    width: 48.5%;
+    width: 50%;
 }
 
 .info2 {
-    width: 48.5%;
+    width: 47.5%;
 }
 
 .info__text {
-    margin-top: 15px;
+    margin-top: 16px;
 }
 
 .more {
+    margin-top: 42px;
     color: #cdd1d7;
     border: 2px solid #cdd1d7;
     background: transparent;
     font-size: 15.83px;
-    padding: 13px 25px;
+    padding: 11px 30px;
 }
 
 .more:hover {
@@ -902,26 +973,41 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .news {
-    background: url(../img/truck.png) no-repeat top left;
-    margin-top: 19px;
-    border-bottom: 1px solid #6c778a;
-    padding-bottom: 10px;
+    display: flex;
+    margin-top: 20px;
+    padding-bottom: 11px;
     line-height: 1em;
+    position: relative;
+}
+
+.news::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #6c778a;
+}
+
+.news img {
+    display: block;
+    max-width: 56px;
+    max-height: 55px;
 }
 
 .news__text {
-    font-family: 'MuseoSansCyrl 700', sans-serif;
+    font-weight: 700;
     font-size: 12.5px;
     color: #dcdee2;
-    margin-left: 69px;
-    margin-bottom: 12px;
+    margin-left: 10px;
     width: 180px;
 }
 
-.news time {
+.news__text time {
+    display: block;
     color: #a2a8b3;
-    margin-left: 69px;
     font-size: 10.42px;
+    margin-top: 14px;
 }
 
 /* ------ Fifth section ------ */
@@ -933,7 +1019,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .services__title {
     margin-top: 40px;
-    margin-bottom: 17px;
+    margin-bottom: 16px;
     color: #c9cace;
     font-size: 19px;
 }
@@ -950,7 +1036,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ------ Sixth section ------ */
 
 .footer {
-    padding-bottom: 61px;
+    padding-bottom: 53px;
     background: #1f2531;
     font-size: 12px;
     border-bottom: 18px solid #58647a;
@@ -983,7 +1069,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .coaching {
     display: flex;
-    margin-top: 39px;
+    margin-top: 42px;
 }
 
 .coaching__words {
@@ -993,12 +1079,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer__btn {
     margin-top: 68px;
-    padding: 7px 13px;
+    padding: 10px 13px;
     border-radius: none;
 }
 
 .clickbait {
-    margin-top: 35px;
+    margin-top: 37px;
 }
 
 .address {
@@ -1017,5 +1103,5 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .protect {
-    margin-top: 21px;
+    margin-top: 23px;
 }
