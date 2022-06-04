@@ -16,11 +16,18 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css">
 	<link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-   <header id="header" class="header">
+    <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+        </div>
+    </div>
+   <header id="header" class="header" data-type="background" data-speed="-4">
       <div class="navigation">
         <div class="container">
             <div class="row">
@@ -31,7 +38,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-6 d-none d-lg-block">
+                <div class="col-lg-6 d-none d-lg-block menu-collapse">
                     <nav>
                         <ul class="menu">
                             <li class="menu__item">
@@ -64,7 +71,7 @@
                 </div>
                 <div class="offset-1 col-2 offset-sm-1 col-sm-4 offset-md-2 col-md-3 offset-lg-0 col-lg-2 g-lg-0">
                     <div class="button-menu">
-                        <button type="button" class="menu__btn btn">
+                        <button type="button" class="menu__btn btn parallax-btn">
                             <i class="fa-solid fa-phone-flip"></i>
                             <p>
                                 Заказать звонок
@@ -164,9 +171,9 @@
        <div class="container">
             <div class="row">
                 <div class="col">
-                    <button type="button" class="points__btn btn">
+                    <a href="#mission" class="points__btn btn go">
                         Подробнее
-                    </button>
+                    </a>
                 </div>
             </div>
             <div class="row">
@@ -227,9 +234,9 @@
                             <p class="info__text">
                                 Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
                             </p>
-                            <button type="button" class="more btn" >
+                            <a href="#header" class="more btn go">
                                 Узнать больше
-                            </button>
+                            </a>
                         </div>
                         <div class="info2">
                             <p class="info__text">
@@ -503,13 +510,36 @@
                    </div>
                </div>
                <div class="col-lg-2">
-                    <button type="button" class="footer__btn btn">
+                    <button type="button" class="footer__btn btn parallax-btn">
                         <i class="fa-solid fa-phone-flip"></i>Заказать звонок
                     </button>
                </div>
            </div>
        </div>
    </footer>
+   <div style="display: none;">
+        <div class="box-modal" id="exampleModal">
+            <div class="box-modal_close arcticmodal-close">x</div>
+            <form action="#" class="form form-popup">
+                <h4 class="form__title">
+                    Заказать обратный звонок
+                </h4>
+                <p class="form__additional">
+                    Заполните форму и мы свяжемся с вами как можно скорее. До скорой встречи
+                </p>
+                <input type="text" name="name" placeholder="Имя" class="form__input">
+                <input type="email" name="email" placeholder="E-mail" class="form__input">
+                <input type="tel" name="phone" placeholder="Телефон" class="form__input">
+                <button class="form__btn btn" type="submit">
+                    <i class="fa-solid fa-phone-flip"></i>Заказать звонок
+                </button>
+            </form>
+        </div>
+    </div>
+   <script src="js/jquery-3.6.0.min.js"></script>
+   <script src="js/jquery.arcticmodal-0.3.min.js"></script>
+   <script src="js/parallax-bg.js"></script>
    <script src="https://kit.fontawesome.com/b882084224.js" crossorigin="anonymous"></script>
+   <script src="js/main.js"></script>
 </body>
 </html>
