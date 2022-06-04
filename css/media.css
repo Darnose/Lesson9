@@ -180,12 +180,12 @@
     .data {
         width: 200px;
     }
-    .map-img {
-        background: url(../img/map-tablet.jpg) no-repeat center top;
-    }
     .consultation {
         margin-left: auto;
         margin-right: auto;
+    }
+    .menu-opened {
+        margin-left: -35px;
     }
 }
 
@@ -303,5 +303,12 @@
     }
     .menu__btn p {
         display: none;
+    }
+    .menu-opened {
+        margin-left: -50px;
+    }
+    .box-modal {
+        width: 100%;
+        padding: 32px 37px ;
     }
 }
