@@ -22,11 +22,14 @@ $(function () {
         $("body,html").animate({scrollTop: destination }, 1000);
     });
 
-    $('.slider').slick({
-        dots: true,
-        infinite: false,
-        autoplay: true,
-        prevArrow: '<button type="button" class="slick-prev"><i class="fa-solid fa-chevron-left"></i></button>',
-        nextArrow: '<button type="button" class="slick-next"><i class="fa-solid fa-chevron-right"></i></button>',
-    });
+    if ($('.slider')) {
+        $('.slider').slick({
+            dots: true,
+            infinite: false,
+            autoplay: true,
+            prevArrow: '<button type="button" class="slick-prev"><i class="fa-solid fa-chevron-left"></i></button>',
+            nextArrow: '<button type="button" class="slick-next"><i class="fa-solid fa-chevron-right"></i></button>',
+        });
+    }
+
 });
