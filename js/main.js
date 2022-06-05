@@ -5,6 +5,10 @@ $(function () {
       $('body').removeClass('loaded_hiding');
     }, 500);
     
+    $(".tel").on('input', function(e){
+        this.value = this.value.replace(/[^0-9\.]/g, '');
+    });
+    
     $('.burger__btn').click (function () {
         $('.menu-collapse').toggleClass('d-none').css('order', '1' );
         $('.menu').toggleClass('menu-opened');
