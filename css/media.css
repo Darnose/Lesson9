@@ -184,9 +184,6 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .menu-opened {
-        margin-left: -35px;
-    }
 }
 
 /* 320-575px */
@@ -304,11 +301,14 @@
     .menu__btn p {
         display: none;
     }
-    .menu-opened {
-        margin-left: -50px;
-    }
     .box-modal {
         width: 100%;
         padding: 32px 37px ;
+    }
+    .menu-opened {
+        flex-direction: column;
+    }
+    .menu.menu-opened .menu__item:not(:last-child) {
+        margin-bottom: 7px;
     }
 }
