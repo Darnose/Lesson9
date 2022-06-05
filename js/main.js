@@ -5,9 +5,7 @@ $(function () {
       $('body').removeClass('loaded_hiding');
     }, 500);
     
-    $(".tel").on('input', function(e){
-        this.value = this.value.replace(/[^0-9\.]/g, '');
-    });
+    $(".tel").mask("+38(999) 999-9999");
 
     $('.burger__btn').click (function () {
         $('.menu-collapse').toggleClass('d-none').css('order', '1' );
