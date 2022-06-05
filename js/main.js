@@ -15,11 +15,14 @@ $(function () {
         $('#exampleModal').arcticmodal();
     });
 
-    $("a.go").click(function (e) {
-        e.preventDefault();
-        elementClick = $(this).attr("href");
-        destination = $(elementClick).offset().top;
-        $("body,html").animate({scrollTop: destination }, 1000);
+    $("a.go").click(function() {
+        $("html, body").animate({
+           scrollTop: $($(this).attr("href")).offset().top + "px"
+        }, {
+           duration: 1000,
+           easing: "swing"
+        });
+        return false;
     });
 
     $('.slider').slick({
