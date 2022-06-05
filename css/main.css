@@ -272,7 +272,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .form__input {
     font-family: 'MuseoSansCyrl', sans-serif;
-    color: #9e9ea1;
+    color: #000;
     width: 100%;
     max-width: 308px;
     height: 38px;
