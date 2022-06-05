@@ -8,15 +8,7 @@ $(function () {
     $(".tel").on('input', function(e){
         this.value = this.value.replace(/[^0-9\.]/g, '');
     });
-    
-    $("a.go").click(function (e) {
-        e.preventDefault();
-        elementClick = $(this).attr("href");
-        destination = $(elementClick).offset().top;
-        $("body,html").animate({scrollTop: destination }, 1000);
-        return false;
-    });
-    
+
     $('.burger__btn').click (function () {
         $('.menu-collapse').toggleClass('d-none').css('order', '1' );
         $('.menu').toggleClass('menu-opened');
@@ -25,6 +17,14 @@ $(function () {
     $('.parallax-btn').click(function (e) {
         e.preventDefault();
         $('#exampleModal').arcticmodal();
+    });
+
+    $('a.go').click(function (e) {
+        e.preventDefault();
+        elementClick = $(this).attr('href');
+        destination = $(elementClick).offset().top;
+        $('body,html').animate({scrollTop: destination }, 1000);
+        return false;
     });
 
     $('.slider').slick({
